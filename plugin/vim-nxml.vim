@@ -6,5 +6,5 @@ let g:loaded_vim_nxml = 1
 augroup vim_nxml
     autocmd!
     autocmd FileType nxml setlocal indentexpr=vim_nxml#Indent(v:lnum)
-    autocmd FileType nxml setlocal indentkeys=o,O,[,]
+    autocmd FileType nxml setlocal indentkeys=o,O,[,],<BS>
 augroup END
